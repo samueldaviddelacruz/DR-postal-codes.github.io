@@ -1,0 +1,210 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DR postal codes API | API Reference</title>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/spectacle.min.css" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="javascripts/foundation.js"></script> -->
+    <script src="javascripts/spectacle.min.js"></script>
+  </head>
+  <body id="spectacle">
+    <div id="page" class="drawer-layout drawer-slide-right-large">
+      <div id="sidebar">
+        <button class="close-button" aria-label="Close menu" type="button" data-drawer-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav id="nav" role="navigation">
+          <h5>Topics</h5>
+          <a href="#introduction">Introduction</a>
+          <h5>Paths</h5>
+          <!-- <section>
+                <a href="#path--postal-codes">/postal-codes</a>
+                <ul> -->
+          <!-- <li> -->
+          <a href="#operation--postal-codes-get"> GET /postal-codes </a>
+          <!-- </li> -->
+          <!-- </ul>
+              </section> -->
+          <h5>Schema Definitions</h5>
+        </nav>
+      </div>
+      <div id="docs" class="row collapse expanded drawer" data-drawer>
+        <button class="floating-menu-icon" type="button" data-drawer-slide="right">
+          <span class="hamburger"></span>
+        </button>
+        <div class="example-box doc-content"></div>
+        <article>
+          <h1 class="doc-title">DR postal codes API
+            <span>API Reference</span>
+          </h1>
+          <div id="introduction" data-traverse-target="introduction">
+            <div class="doc-row">
+              <div class="doc-copy">
+                <p>This API allows the user to retrieve the postal codes of the Dominican republic</p>
+              </div>
+              <div class="doc-examples">
+                <section>
+                  <h5>API Endpoint</h5>
+                  <!-- <div class="hljs"> --><pre><code>https://wm2c86l4fl.execute-api.us-west-2.amazonaws.com/dev</code></pre>
+                  <!-- </div> -->
+                  <h5>Contact:
+                    <a href="mailto:alphaelena@gmail.com">alphaelena@gmail.com</a>
+                  </h5>
+                  <h5>Schemes:
+                    <span>https</span>
+                  </h5>
+                  <h5>Version:
+                    <span>1.0</span>
+                  </h5>
+                </section>
+              </div>
+            </div>
+          </div>
+          <h1>Paths</h1>
+          <span id="path--postal-codes"></span>
+          <div id="operation--postal-codes-get" class="operation panel" data-traverse-target="operation--postal-codes-get">
+            <!-- <section class="operation-tags row"> -->
+            <!-- <div class="doc-copy"> -->
+            <div class="operation-tags">
+              <a class="label" href="#tag-postal-codes">postal-codes</a>
+              <!---->
+            </div>
+            <!-- </div> -->
+            <!-- </section> -->
+            <h2 class="operation-title">
+              <span class="operation-name">
+                <span class="operation-name">GET</span>
+                <span class="operation-path">/postal-codes</span>
+              </span>
+            </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-operation-description">
+                  <p>GET method, returns a list of postal codes given a provincia provided by query string</p>
+                </section>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-request-params">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">provincia:
+                        <span class="prop-type">
+                          <span class="json-property-type">string</span>
+                          <span class="json-property-enum" title="Possible values">
+                            <span class="json-property-enum-item">all</span>,
+                            <span class="json-property-enum-item">altagracia</span>,
+                            <span class="json-property-enum-item">azua</span>,
+                            <span class="json-property-enum-item">bahoruco</span>,
+                            <span class="json-property-enum-item">barahona</span>,
+                            <span class="json-property-enum-item">dajabon</span>,
+                            <span class="json-property-enum-item">duarte</span>,
+                            <span class="json-property-enum-item">seibo</span>,
+                            <span class="json-property-enum-item">eliaspina</span>,
+                            <span class="json-property-enum-item">espaillat</span>,
+                            <span class="json-property-enum-item">hatomayor</span>,
+                            <span class="json-property-enum-item">independencia</span>,
+                            <span class="json-property-enum-item">laromana</span>,
+                            <span class="json-property-enum-item">lavega</span>,
+                            <span class="json-property-enum-item">mariatrinidadsanchez</span>,
+                            <span class="json-property-enum-item">monsenornouel</span>,
+                            <span class="json-property-enum-item">montecristi</span>,
+                            <span class="json-property-enum-item">monteplata</span>,
+                            <span class="json-property-enum-item">pedernales</span>,
+                            <span class="json-property-enum-item">peravia</span>,
+                            <span class="json-property-enum-item">puertoplata</span>,
+                            <span class="json-property-enum-item">hermanasmirabal</span>,
+                            <span class="json-property-enum-item">samana</span>,
+                            <span class="json-property-enum-item">sancristobal</span>,
+                            <span class="json-property-enum-item">sanjuan</span>,
+                            <span class="json-property-enum-item">sanpedrodemacoris</span>,
+                            <span class="json-property-enum-item">sanchezramirez</span>,
+                            <span class="json-property-enum-item">santiago</span>,
+                            <span class="json-property-enum-item">santiagorodriguez</span>,
+                            <span class="json-property-enum-item">valverde</span>,
+                            <span class="json-property-enum-item">ocoa</span>,
+                            <span class="json-property-enum-item">santodomingo</span>
+                          </span>
+                          <span class="json-property-range" title="Value limits"></span>
+                        </span>
+                      </div>
+                      <span class="json-property-required"></span>
+                      <div class="prop-subtitle"> in query </div>
+                    </div>
+                    <div class="prop-value">
+                      <p>Provincia to be provided by the user to get its postal codes, mandatory</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples"></div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <section class="swagger-responses">
+                  <div class="prop-row prop-group">
+                    <div class="prop-name">
+                      <div class="prop-title">200 OK</div>
+                      <div class="prop-ref"></div>
+                      <!-- <span class="swagger-global"></span> <span class="json-schema-reference"><a href=""></a></span> -->
+                    </div>
+                    <div class="prop-value">
+                      <p>200 response</p>
+                    </div>
+                  </div>
+                  <div class="prop-row prop-inner">
+                    <div class="prop-name">type</div>
+                    <div class="prop-value">
+                      <span class="json-property-type">object[]</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="doc-examples">
+                <h5>Response Content-Types:
+                  <span>application/json</span>
+                </h5>
+                <section>
+                  <h5>Response Example
+                    <span>(200 OK)</span>
+                  </h5>
+                  <!-- <div class="hljs"> -->
+                  <html>
+                  <head></head>
+                  <body><pre><code class="hljs language-json">[
+  {
+    <span class="hljs-attr">&quot;provincia&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;zipcode&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;street&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;street_short&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;place&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+    <span class="hljs-attr">&quot;coor_z&quot;</span>: <span class="hljs-string">&quot;number&quot;</span>,
+    <span class="hljs-attr">&quot;coor_y&quot;</span>: <span class="hljs-string">&quot;number&quot;</span>,
+    <span class="hljs-attr">&quot;lng&quot;</span>: <span class="hljs-string">&quot;number&quot;</span>,
+    <span class="hljs-attr">&quot;lat&quot;</span>: <span class="hljs-string">&quot;number&quot;</span>
+  }
+]
+</code></pre> </body>
+                  </html>
+                  <!-- </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="doc-row no-margin">
+            <div class="doc-copy doc-separator">
+              <a class="powered-by" href="https://sourcey.com/spectacle">Documentation by
+                <span>Spectacle</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
